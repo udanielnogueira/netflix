@@ -1,0 +1,141 @@
+/* Variáveis */
+:root {
+  --dark-bg: #0f0f0f;
+  --primary-red: #e50914;
+  --secondary-bg: #1a1a1a;
+  --text-primary: #fafafa;
+  --text-secondary: #555555;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  color: var(--text-primary);
+  background-color: var(--dark-bg);
+  font-family: "Inter", sans-serif;
+
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+/* Main */
+main {
+  width: 100%;
+  max-width: 1600px;
+  padding: 32px 0px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  margin-left: 16px;
+}
+
+.netflix-logo {
+  width: 96px;
+}
+
+section {
+  margin-top: 128px;
+}
+
+section h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.profiles {
+  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  list-style: none;
+  margin-bottom: 72px;
+}
+
+.profile {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.profile img {
+  padding: 2px;
+  width: 136px;
+  height: 136px;
+  border-radius: 4px;
+}
+
+.profile .img-box {
+  width: calc(164px - 24px);
+  height: calc(164px - 24px);
+}
+
+.profile figcaption {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.add-profile div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 4px;
+  width: calc(160px - 24px);
+  height: calc(160px - 24px);
+}
+
+.add-profile svg {
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.add-profile p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.bt-manage-profile {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 20px;
+  font-family: "Inter", sans-serif;
+
+  color: var(--text-secondary);
+  background-color: var(--dark-bg);
+  border: var(--text-secondary) 2px solid;
+
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 667px) {
+  h2 {
+    margin: auto 32px;
+  }
+
+  section {
+    margin-top: 64px;
+  }
+
+  .profiles {
+    margin-right: 32px;
+    margin-left: 32px;
+    gap: 16px;
+  }
+}
