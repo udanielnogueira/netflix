@@ -24,18 +24,6 @@ body {
   display: flex;
   min-height: 100vh;
   justify-content: center;
-
-  opacity: 0.5;
-  animation: fadeIn 2s ease-in forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;f
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* Main */
@@ -44,6 +32,18 @@ main {
   max-width: 1600px;
   padding: 32px 0px;
   text-align: center;
+
+  opacity: 0.4;
+  animation: fadeIn 2.4s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 header {
