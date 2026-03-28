@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Netflix</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Netflix | Seleção de perfil ." />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background: #0f0f0f;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .appIconContainer {
+        gap: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .fiapIcon,
+      .aluraIcon,
+      .netflixIcon {
+        width: 96px;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+
+      .fiapIcon,
+      .aluraIcon,
+      .netflixIcon {
+        opacity: 0.6;
+        filter: grayscale(50%);
+        transition: transform 0.3s ease;
+      }
+
+      .fiapIcon:hover,
+      .aluraIcon:hover,
+      .netflixIcon:hover {
+        opacity: 1;
+        filter: grayscale(0%);
+        transform: translateY(-10%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="appIconContainer">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.alura.com.br/"
+      >
+        <img
+          alt="Alura Icon"
+          class="appIcon aluraIcon"
+          src="./assets/alura-icon.png"
+        />
+      </a>
+      <img
+        alt="Netflix App Icon"
+        src="./assets/app-icon.png"
+        class="appIcon netflixIcon"
+      />
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.fiap.com.br/"
+      >
+        <img
+          alt="FIAP Icon"
+          class="appIcon fiapIcon"
+          src="./assets/fiap-icon.webp"
+        />
+      </a>
+    </div>
+
+    <script>
+      const button = document.querySelector(".netflixIcon");
+
+      button.addEventListener("click", () => {
+        window.location.href = "animation.html";
+      });
+    </script>
+  </body>
+</html>

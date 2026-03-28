@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Netflix</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Netflix | Seleção de perfil ." />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+        height: 100vh;
+        background: #0f0f0f;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <video id="loadingVideo" autoplay playsinline>
+      <source src="./assets/video.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo.
+    </video>
+
+    <script>
+      const video = document.getElementById("loadingVideo");
+
+      video.addEventListener("ended", () => {
+        window.location.href = "profile.html";
+      });
+    </script>
+  </body>
+</html>
