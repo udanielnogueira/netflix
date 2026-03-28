@@ -1,6 +1,6 @@
 /* Variáveis */
 :root {
-  --dark-bg: #0f0f0f;
+  --dark-bg: #000;
   --primary-red: #e50914;
   --secondary-bg: #1a1a1a;
   --text-primary: #fafafa;
@@ -33,14 +33,11 @@ main {
   padding: 32px 0px;
   text-align: center;
 
-  opacity: 0.4;
-  animation: fadeIn 2.4s ease-in forwards;
+  opacity: 0;
+  animation: fadeIn 3s ease-in forwards;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
   to {
     opacity: 1;
   }
@@ -48,7 +45,7 @@ main {
 
 header {
   display: flex;
-  margin-left: 16px;
+  margin-left: 24px;
 }
 
 .netflix-logo {
